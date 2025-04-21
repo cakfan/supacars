@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main # Pastikan branch utama sesuai dengan repo kamu
+
+permissions:
+  contents: write # Izinkan workflow menulis ke repository
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # Membuat dan mengupdate branch gh-pages
+          folder: src # Sesuaikan dengan lokasi index.html (src/)
+          clean: true
