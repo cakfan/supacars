@@ -10,6 +10,7 @@
   --card: #f7f7f8;
   --border-card: #ededed;
   --accent: #5a5e63;
+  --head: #2f3137;
 }
 
 @theme inline {
@@ -21,6 +22,7 @@
   --color-card: var(--card);
   --color-border-card: var(--border-card);
   --color-accent: var(--accent);
+  --color-head: var(--head);
 
   --shadow-primary: 0 4px 10px 0 rgba(55, 117, 241, 0.8);
 }
