@@ -6,18 +6,24 @@
     <title>Supacars - Car Rent</title>
 
     <link href="./output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div
       class="h-[791px] bg-[linear-gradient(to_bottom,_#1B1D22_0%,_#07090D_99%)]"
     >
-      <header class="w-[1280px] h-[125px] px-[62px] py-[35px]">
+      <header class="mx-auto w-[1280px] h-[125px] px-[62px] py-[35px]">
         <nav class="flex items-center">
           <a href="#">
             <img
               src="./assets/images/icons/logo.svg"
               alt="Logo"
-              class="h-[44px] w-[44px] overflow-clip object-contain"
+              class="h-[44px] w-[44px] overflow-clip object-contain shrink-0"
             />
           </a>
 
@@ -58,7 +64,244 @@
           </div>
         </nav>
       </header>
+
+      <!-- Hero section -->
+      <section class="flex justify-center">
+        <div class="w-[1280px]">
+          <div class="flex gap-[142px]">
+            <div class="flex flex-col gap-4 ml-[62px] mt-[85px] w-[556px]">
+              <div
+                class="w-fit flex gap-2 items-center backdrop-blur-[2px] bg-white/[0.12] p-2 rounded-[100px]"
+              >
+                <img
+                  src="./assets/images/icons/verify.svg"
+                  alt="Verify"
+                  class="h-4 w-4 overflow-clip object-center shrink-0"
+                />
+                <span class="text-white text-[12px] leading-[15px]"
+                  >Situs jual beli mobil terpercaya</span
+                >
+              </div>
+              <h1 class="text-[64px] text-white leading-[77px] font-bold mr-20">
+                Jual beli mobil di mana, dan kapan saja
+              </h1>
+              <img
+                src="./assets/images/thumbnails/line.png"
+                alt="Line"
+                class="h-[52px] w-[400px] overflow-clip shrink-0"
+              />
+            </div>
+            <div
+              class="relative flex gap-[39px] items-center !h-[571px] overflow-hidden"
+            >
+              <div class="h-[298px] swiper !overflow-visible">
+                <div class="swiper-wrapper flex flex-col">
+                  <!-- card 1 -->
+                  <div
+                    class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
+                  >
+                    <div
+                      class="absolute top-0 left-0 w-full h-full bg-card-carousel rounded-[20px]"
+                    ></div>
+                    <div
+                      class="relative slide-image transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0"
+                    >
+                      <img
+                        src="./assets/images/thumbnails/mobil-1.png"
+                        alt="mobil"
+                        class="shrink-0 object-contain"
+                      />
+
+                      <div
+                        class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/[0.3] backdrop-blur-[2px] rounded-[100px]"
+                      >
+                        <img
+                          src="./assets/images/icons/verify.svg"
+                          alt="verify"
+                          class="h-4 w-4 overflow-clip shrink-0"
+                        />
+                        <span class="text-[12px] leading-[15px] text-white"
+                          >Dealer Terverfikasi</span
+                        >
+                      </div>
+                    </div>
+                    <h2
+                      class="mt-6 w-[248px] text-lg leading-[31px] font-medium text-white"
+                    >
+                      2018 BMW M4 3.0 Coupe Yellow Edition
+                    </h2>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div
+                    class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
+                  >
+                    <div
+                      class="absolute top-0 left-0 w-full h-full bg-card-carousel rounded-[20px]"
+                    ></div>
+                    <div
+                      class="relative slide-image transition-all duration-300 ease-in-out h-[179px] w-[385px] shrink-0"
+                    >
+                      <img
+                        src="./assets/images/thumbnails/mobil-2.png"
+                        alt="mobil"
+                        class="shrink-0 object-contain"
+                      />
+
+                      <div
+                        class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/[0.3] backdrop-blur-[2px] rounded-[100px]"
+                      >
+                        <img
+                          src="./assets/images/icons/verify.svg"
+                          alt="verify"
+                          class="h-4 w-4 overflow-clip shrink-0"
+                        />
+                        <span class="text-[12px] leading-[15px] text-white"
+                          >Dealer Terverfikasi</span
+                        >
+                      </div>
+                    </div>
+                    <h2
+                      class="mt-6 w-[248px] text-lg leading-[31px] font-medium text-white"
+                    >
+                      2020 Mercedes-Benz A-Class - Limited Edition
+                    </h2>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div
+                    class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
+                  >
+                    <div
+                      class="absolute top-0 left-0 w-full h-full bg-card-carousel rounded-[20px]"
+                    ></div>
+                    <div
+                      class="relative slide-image transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0"
+                    >
+                      <img
+                        src="./assets/images/thumbnails/mobil-3.png"
+                        alt="mobil"
+                        class="shrink-0 object-contain"
+                      />
+
+                      <div
+                        class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/[0.3] backdrop-blur-[2px] rounded-[100px]"
+                      >
+                        <img
+                          src="./assets/images/icons/verify.svg"
+                          alt="verify"
+                          class="h-4 w-4 overflow-clip shrink-0"
+                        />
+                        <span class="text-[12px] leading-[15px] text-white"
+                          >Dealer Terverfikasi</span
+                        >
+                      </div>
+                    </div>
+                    <h2
+                      class="mt-6 w-[248px] text-lg leading-[31px] font-medium text-white"
+                    >
+                      2018 BMW M4 3.0 Coupe Yellow Edition
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-[33px]">
+                <button
+                  id="btn-prev"
+                  type="button"
+                  class="relative cursor-pointer transition-all duration-300 p-3 h-12 w-12 rounded-full flex items-center justify-center shrink-0 overflow-clip"
+                >
+                  <div class="absolute bg-arrow-up h-full w-full"></div>
+                  <img
+                    src="./assets/images/icons/arrow-up.svg"
+                    alt="Arrow up"
+                    class="h-6 w-6"
+                  />
+                </button>
+
+                <button
+                  id="btn-next"
+                  type="button"
+                  class="relative cursor-pointer transition-all duration-300 p-3 h-12 w-12 rounded-full flex items-center justify-center shrink-0 overflow-clip"
+                >
+                  <div class="absolute bg-arrow-down h-full w-full"></div>
+                  <img
+                    src="./assets/images/icons/arrow-down.svg"
+                    alt="Arrow down"
+                    class="h-6 w-6"
+                  />
+                </button>
+              </div>
+              <div
+                class="absolute z-50 left-0 top-0 h-[129px] w-[371px] bg-[linear-gradient(to_top,_#151C2800_0%,_#181A1F_100%)]"
+              ></div>
+              <div
+                class="absolute z-50 left-0 bottom-0 h-[144px] w-[371px] bg-[linear-gradient(to_bottom,_#151C2800_0%,_#0A0C10_100%)]"
+              ></div>
+            </div>
+          </div>
+          <form
+            class="z-50 mx-auto w-[1152px] flex flex-col rounded-[16px] overflow-clip"
+          >
+            <div class="w-full h-[94px] flex items-center gap-6 p-6 bg-white">
+              <select
+                class="appearance-none w-[251px] p-6 flex items-center px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+              >
+                <option value="">Merek Mobil</option>
+                <option value="merek1">Toyota</option>
+                <option value="merek2">Honda</option>
+                <option value="merek3">Suzuki</option>
+                <option value="merek3">Nisan</option>
+                <option value="merek3">Hyundai</option>
+              </select>
+              <select
+                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+              >
+                <option value="">Model Mobil</option>
+                <option value="model1">MPV</option>
+                <option value="model2">SUV</option>
+                <option value="model3">Hatchback</option>
+                <option value="model3">Sedan</option>
+                <option value="model3">Crossover</option>
+              </select>
+              <select
+                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+              >
+                <option value="">Lokasi Penjual</option>
+                <option value="lokasi1">Jakarta</option>
+                <option value="lokasi2">Bandung</option>
+                <option value="lokasi3">Surabaya</option>
+                <option value="lokasi3">Malang</option>
+                <option value="lokasi3">Jember</option>
+              </select>
+              <select
+                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+              >
+                <option value="">Range Harga</option>
+                <option value="model1">&leq; 25jt</option>
+                <option value="model2">26jt - 96jt</option>
+                <option value="model3">&geq; 96jt</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              class="flex items-center justify-center bg-foreground px-4 py-6"
+            >
+              <span class="text-[20px] leading-[22px] font-bold text-white"
+                >Cari mobil</span
+              >
+              <img
+                src="./assets/images/icons/search.svg"
+                alt="Search"
+                class="h-14 w-14 overflow-clip shrink-0"
+              />
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
