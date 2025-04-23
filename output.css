@@ -22,6 +22,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,11 +257,20 @@
   .mr-\[67px\] {
     margin-right: 67px;
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
   }
   .ml-\[62px\] {
     margin-left: 62px;
+  }
+  .ml-\[114px\] {
+    margin-left: 114px;
+  }
+  .ml-\[134px\] {
+    margin-left: 134px;
   }
   .ml-\[364px\] {
     margin-left: 364px;
@@ -432,6 +442,9 @@
   }
   .w-\[556px\] {
     width: 556px;
+  }
+  .w-\[574px\] {
+    width: 574px;
   }
   .w-\[708px\] {
     width: 708px;
@@ -775,6 +788,9 @@
   .pt-\[9px\] {
     padding-top: 9px;
   }
+  .pt-\[62px\] {
+    padding-top: 62px;
+  }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
   }
@@ -795,6 +811,9 @@
   }
   .pb-\[19px\] {
     padding-bottom: 19px;
+  }
+  .pb-\[81px\] {
+    padding-bottom: 81px;
   }
   .pb-\[120px\] {
     padding-bottom: 120px;
@@ -865,6 +884,10 @@
     --tw-leading: calc(var(--spacing) * 12);
     line-height: calc(var(--spacing) * 12);
   }
+  .leading-\[1\.6\] {
+    --tw-leading: 1.6;
+    line-height: 1.6;
+  }
   .leading-\[13px\] {
     --tw-leading: 13px;
     line-height: 13px;
@@ -913,6 +936,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -928,6 +955,12 @@
   .tracking-\[-0\.02em\] {
     --tw-tracking: -0.02em;
     letter-spacing: -0.02em;
+  }
+  .text-\[\#7F7F7F\] {
+    color: #7F7F7F;
+  }
+  .text-\[\#595959\] {
+    color: #595959;
   }
   .text-accent {
     color: var(--accent);
@@ -1069,10 +1102,32 @@
       }
     }
   }
+  .hover\:font-medium {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
   .hover\:text-foreground {
     &:hover {
       @media (hover: hover) {
         color: var(--foreground);
+      }
+    }
+  }
+  .hover\:text-head {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--head);
+      }
+    }
+  }
+  .hover\:text-primary {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--primary);
       }
     }
   }
