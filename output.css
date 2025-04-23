@@ -241,14 +241,23 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mt-\[120px\] {
+    margin-top: 120px;
+  }
   .mt-\[153px\] {
     margin-top: 153px;
   }
   .mr-20 {
     margin-right: calc(var(--spacing) * 20);
   }
+  .mr-\[66px\] {
+    margin-right: 66px;
+  }
   .mr-\[67px\] {
     margin-right: 67px;
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
   }
   .ml-\[62px\] {
     margin-left: 62px;
@@ -285,6 +294,9 @@
   }
   .\!h-\[298px\] {
     height: 298px !important;
+  }
+  .\!h-\[387px\] {
+    height: 387px !important;
   }
   .\!h-\[571px\] {
     height: 571px !important;
@@ -451,6 +463,18 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-rotate-45 {
+    rotate: calc(45deg * -1);
+  }
+  .-rotate-90 {
+    rotate: calc(90deg * -1);
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .cursor-none {
+    cursor: none;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -489,6 +513,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .gap-\[19\.5px\] {
     gap: 19.5px;
@@ -604,6 +631,27 @@
   .bg-foreground {
     background-color: var(--foreground);
   }
+  .bg-head {
+    background-color: var(--head);
+  }
+  .bg-head\/5 {
+    background-color: var(--head);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--head) 5%, transparent);
+    }
+  }
+  .bg-head\/\[0\.08\] {
+    background-color: var(--head);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--head) 8%, transparent);
+    }
+  }
+  .bg-head\/\[0\.8\] {
+    background-color: var(--head);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--head) 80%, transparent);
+    }
+  }
   .bg-primary {
     background-color: var(--primary);
   }
@@ -669,6 +717,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .\!px-\[62px\] {
+    padding-inline: 62px !important;
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -793,6 +844,9 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .text-\[44px\] {
     font-size: 44px;
   }
@@ -806,6 +860,10 @@
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
+  }
+  .leading-12 {
+    --tw-leading: calc(var(--spacing) * 12);
+    line-height: calc(var(--spacing) * 12);
   }
   .leading-\[13px\] {
     --tw-leading: 13px;

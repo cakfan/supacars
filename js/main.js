@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper-vertical", {
     direction: "vertical", // Vertical scrolling
     slidesPerView: 1, // Only 1 slide visible at a time
     spaceBetween: 16, // Space between slides

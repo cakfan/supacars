@@ -94,7 +94,7 @@
             <div
               class="relative flex gap-[39px] items-center !h-[571px] overflow-hidden"
             >
-              <div class="h-[298px] swiper !overflow-visible">
+              <div class="h-[298px] swiper-vertical !overflow-visible">
                 <div class="swiper-wrapper flex flex-col">
                   <!-- card 1 -->
                   <div
@@ -285,7 +285,7 @@
             </div>
             <button
               type="submit"
-              class="flex items-center justify-center bg-foreground px-4 py-6"
+              class="flex items-center justify-center bg-foreground px-4 py-6 cursor-pointer"
             >
               <span class="text-[20px] leading-[22px] font-bold text-white"
                 >Cari mobil</span
@@ -1037,7 +1037,7 @@
               />
               <button
                 type="submit"
-                class="h-14 w-14 rounded-full bg-primary flex items-center justify-center shrink-0 transition-all duration-300 hover:shadow-primary"
+                class="h-14 w-14 rounded-full bg-primary flex items-center justify-center shrink-0 cursor-pointer transition-all duration-300 hover:shadow-primary"
               >
                 <img
                   src="./assets/images/icons/search.svg"
@@ -1216,10 +1216,360 @@
           </div>
         </div>
       </section>
+
+      <!-- New car section -->
+      <section class="flex justify-center">
+        <div class="py-[120px] w-[1280px] overflow-hidden">
+          <div class="ml-[62px] mr-[66px] mb-9 flex items-center">
+            <h2
+              class="text-head text-[40px] leading-12 font-semibold -tracking-[0.02em]"
+            >
+              Rekomendasi mobil baru
+            </h2>
+            <div class="ml-auto flex gap-8 items-center">
+              <a
+                href="#"
+                class="flex gap-3 items-center pl-10 pr-8 py-5 border border-[#E7E7E9] rounded-[64px] text-head text-[20px] leading-5 font-bold transition-all duration-300 hover:border-head hover:ring hover:ring-head"
+              >
+                <span>See all </span>
+                <img
+                  src="./assets/images/icons/arrow-right.svg"
+                  alt="Arrow right"
+                  class="h-[18px] w-[18px] overflow-clip shrink-0"
+                />
+              </a>
+              <div class="flex gap-[33px]">
+                <button
+                  type="button"
+                  id="btn-prev-horiz"
+                  class="cursor-none p-3 h-12 w-12 rounded-full bg-head/[0.08] flex items-center justify-center shrink-0"
+                >
+                  <img
+                    src="./assets/images/icons/arrow-up.svg"
+                    alt="Arrow left"
+                    class="-rotate-90"
+                  />
+                </button>
+                <button
+                  type="button"
+                  id="btn-next-horiz"
+                  class="cursor-pointer p-3 h-12 w-12 rounded-full bg-primary flex items-center justify-center shrink-0 transition-all duration-300 hover:shadow-primary"
+                >
+                  <img
+                    src="./assets/images/icons/arrow-down.svg"
+                    alt="Arrow right"
+                    class="-rotate-90"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-horizontal !px-[62px]">
+            <div class="swiper-wrapper flex">
+              <!-- slide 1 -->
+              <a
+                href="#"
+                class="swiper-slide group !h-[387px] !w-[371px] bg-card rounded-[20px] border border-[#EDEDED]"
+              >
+                <div
+                  class="flex flex-col gap-6 px-4 pt-4 pb-[19px] rounded-[20px] bg-white h-[342px]"
+                >
+                  <div
+                    class="relative transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0 group-hover:w-[385px]"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/card-2.png"
+                      alt="mobil"
+                      class="shrink-0 object-contain"
+                    />
+
+                    <div
+                      class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/50 backdrop-blur-[2px] rounded-[100px]"
+                    >
+                      <img
+                        class="h-4 w-4 mask-[url('./assets/images/icons/verify.svg')] mask-no-repeat mask-contain bg-primary overflow-clip shrink-0"
+                      />
+                      <span class="text-[12px] leading-[15px] text-head/50"
+                        >Dealer Terverfikasi</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="w-full flex justify-between">
+                      <h3
+                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                      >
+                        2020 Mercedes-Benz A-Class - Limited Edition
+                      </h3>
+                      <button
+                        type="button"
+                        class="h-8 w-8 rounded-full bg-card flex items-center justify-center shrink-0 cursor-pointer"
+                      >
+                        <img
+                          src="./assets/images/icons/heart.svg"
+                          alt="Favorite"
+                          class="h-[18px] w-[18px] shrink-0"
+                        />
+                      </button>
+                    </div>
+                    <p class="text-2xl leading-[29px] font-bold">
+                      <span class="text-foreground/40">Rp </span>
+                      1,100,000,000
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="pl-4 pr-[19px] pb-2 pt-[9px] flex items-center justify-between"
+                >
+                  <div class="flex gap-1 items-center py-1.5">
+                    <img
+                      src="./assets/images/icons/location.svg"
+                      alt="Location"
+                      class="h-4 w-4 overflow-clip shrink-0"
+                    />
+                    <p
+                      class="text-[11px] leading-[13px] font-medium text-muted"
+                    >
+                      Tebet, Jakarta Selatan
+                    </p>
+                  </div>
+                  <span
+                    class="px-3 py-1.5 bg-primary/5 border border-primary text-[10px] leading-3 font-medium text-primary rounded-[100px]"
+                    >Negotiable</span
+                  >
+                </div>
+              </a>
+
+              <!-- slide 2 -->
+              <a
+                href="#"
+                class="swiper-slide group !h-[387px] !w-[371px] bg-card rounded-[20px] border border-[#EDEDED]"
+              >
+                <div
+                  class="flex flex-col gap-6 px-4 pt-4 pb-[19px] rounded-[20px] bg-white h-[342px]"
+                >
+                  <div
+                    class="relative transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0 group-hover:w-[385px]"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/card-7.png"
+                      alt="mobil"
+                      class="shrink-0 object-contain"
+                    />
+
+                    <div
+                      class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/50 backdrop-blur-[2px] rounded-[100px]"
+                    >
+                      <img
+                        class="h-4 w-4 mask-[url('./assets/images/icons/verify.svg')] mask-no-repeat mask-contain bg-primary overflow-clip shrink-0"
+                      />
+                      <span class="text-[12px] leading-[15px] text-head/50"
+                        >Dealer Terverfikasi</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="w-full flex justify-between">
+                      <h3
+                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                      >
+                        2019 Mercedes-Benz G Class-Class - SUV
+                      </h3>
+                      <button
+                        type="button"
+                        class="h-8 w-8 rounded-full bg-card flex items-center justify-center shrink-0 cursor-pointer"
+                      >
+                        <img
+                          src="./assets/images/icons/heart.svg"
+                          alt="Favorite"
+                          class="h-[18px] w-[18px] shrink-0"
+                        />
+                      </button>
+                    </div>
+                    <p class="text-2xl leading-[29px] font-bold">
+                      <span class="text-foreground/40">Rp </span>
+                      4,900,000,000
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="pl-4 pr-[19px] pb-2 pt-[9px] flex items-center justify-between"
+                >
+                  <div class="flex gap-1 items-center py-1.5">
+                    <img
+                      src="./assets/images/icons/location.svg"
+                      alt="Location"
+                      class="h-4 w-4 overflow-clip shrink-0"
+                    />
+                    <p
+                      class="text-[11px] leading-[13px] font-medium text-muted"
+                    >
+                      Menteng, Jakarta Selatan
+                    </p>
+                  </div>
+                  <span
+                    class="px-3 py-1.5 bg-primary/5 border border-primary text-[10px] leading-3 font-medium text-primary rounded-[100px]"
+                    >Negotiable</span
+                  >
+                </div>
+              </a>
+
+              <!-- slide 3 -->
+              <a
+                href="#"
+                class="swiper-slide group !h-[387px] !w-[371px] bg-card rounded-[20px] border border-[#EDEDED]"
+              >
+                <div
+                  class="flex flex-col gap-6 px-4 pt-4 pb-[19px] rounded-[20px] bg-white h-[342px]"
+                >
+                  <div
+                    class="relative transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0 group-hover:w-[385px]"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/card-6.png"
+                      alt="mobil"
+                      class="shrink-0 object-contain"
+                    />
+
+                    <div
+                      class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/50 backdrop-blur-[2px] rounded-[100px]"
+                    >
+                      <img
+                        class="h-4 w-4 mask-[url('./assets/images/icons/verify.svg')] mask-no-repeat mask-contain bg-primary overflow-clip shrink-0"
+                      />
+                      <span class="text-[12px] leading-[15px] text-head/50"
+                        >Dealer Terverfikasi</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="w-full flex justify-between">
+                      <h3
+                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                      >
+                        2024 BMW X6 3.0 xDrive40i M Sport SUV
+                      </h3>
+                      <button
+                        type="button"
+                        class="h-8 w-8 rounded-full bg-card flex items-center justify-center shrink-0 cursor-pointer"
+                      >
+                        <img
+                          src="./assets/images/icons/heart.svg"
+                          alt="Favorite"
+                          class="h-[18px] w-[18px] shrink-0"
+                        />
+                      </button>
+                    </div>
+                    <p class="text-2xl leading-[29px] font-bold">
+                      <span class="text-foreground/40">Rp </span>
+                      900,000,000
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="pl-4 pr-[19px] pb-2 pt-[9px] flex items-center justify-between"
+                >
+                  <div class="flex gap-1 items-center py-1.5">
+                    <img
+                      src="./assets/images/icons/location.svg"
+                      alt="Location"
+                      class="h-4 w-4 overflow-clip shrink-0"
+                    />
+                    <p
+                      class="text-[11px] leading-[13px] font-medium text-muted"
+                    >
+                      Senopati, Jakarta Selatan
+                    </p>
+                  </div>
+                  <span
+                    class="px-3 py-1.5 bg-primary/5 border border-primary text-[10px] leading-3 font-medium text-primary rounded-[100px]"
+                    >Negotiable</span
+                  >
+                </div>
+              </a>
+
+              <!-- slide 4 -->
+              <a
+                href="#"
+                class="swiper-slide group !h-[387px] !w-[371px] bg-card rounded-[20px] border border-[#EDEDED]"
+              >
+                <div
+                  class="flex flex-col gap-6 px-4 pt-4 pb-[19px] rounded-[20px] bg-white h-[342px]"
+                >
+                  <div
+                    class="relative transition-all duration-300 ease-in-out h-[179px] w-[339px] shrink-0 group-hover:w-[385px]"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/card-1.png"
+                      alt="mobil"
+                      class="shrink-0 object-contain"
+                    />
+
+                    <div
+                      class="absolute -left-2 -top-2 flex w-fit p-2 gap-2 items-center bg-[#E5E5E5]/50 backdrop-blur-[2px] rounded-[100px]"
+                    >
+                      <img
+                        class="h-4 w-4 mask-[url('./assets/images/icons/verify.svg')] mask-no-repeat mask-contain bg-primary overflow-clip shrink-0"
+                      />
+                      <span class="text-[12px] leading-[15px] text-head/50"
+                        >Dealer Terverfikasi</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="w-full flex justify-between">
+                      <h3
+                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                      >
+                        2018 BMW M4 3.0 Coupe Yellow Edition
+                      </h3>
+                      <button
+                        type="button"
+                        class="h-8 w-8 rounded-full bg-card flex items-center justify-center shrink-0 cursor-pointer"
+                      >
+                        <img
+                          src="./assets/images/icons/heart.svg"
+                          alt="Favorite"
+                          class="h-[18px] w-[18px] shrink-0"
+                        />
+                      </button>
+                    </div>
+                    <p class="text-2xl leading-[29px] font-bold">
+                      <span class="text-foreground/40">Rp </span>
+                      1,700,000,000
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="pl-4 pr-[19px] pb-2 pt-[9px] flex items-center justify-between"
+                >
+                  <div class="flex gap-1 items-center py-1.5">
+                    <img
+                      src="./assets/images/icons/location.svg"
+                      alt="Location"
+                      class="h-4 w-4 overflow-clip shrink-0"
+                    />
+                    <p
+                      class="text-[11px] leading-[13px] font-medium text-muted"
+                    >
+                      Sudirman, Jakarta Pusat
+                    </p>
+                  </div>
+                  <span
+                    class="px-3 py-1.5 bg-primary/5 border border-primary text-[10px] leading-3 font-medium text-primary rounded-[100px]"
+                    >Negotiable</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper-horizontal.js"></script>
     <script src="./js/map.js"></script>
   </body>
 </html>
