@@ -91,13 +91,14 @@
                 class="h-[52px] w-[400px] overflow-clip shrink-0"
               />
             </div>
-            <div
-              class="relative flex gap-[39px] items-center !h-[571px] overflow-hidden"
-            >
-              <div class="h-[298px] swiper-vertical !overflow-visible">
+            <div class="relative flex gap-[39px] !h-[571px] overflow-hidden">
+              <div
+                class="mt-[138px] h-[298px] swiper-vertical !overflow-visible"
+              >
                 <div class="swiper-wrapper flex flex-col">
                   <!-- card 1 -->
-                  <div
+                  <a
+                    href="#"
                     class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
                   >
                     <div
@@ -130,10 +131,11 @@
                     >
                       2018 BMW M4 3.0 Coupe Yellow Edition
                     </h3>
-                  </div>
+                  </a>
 
                   <!-- card 2 -->
-                  <div
+                  <a
+                    href="#"
                     class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
                   >
                     <div
@@ -166,10 +168,11 @@
                     >
                       2020 Mercedes-Benz A-Class - Limited Edition
                     </h3>
-                  </div>
+                  </a>
 
                   <!-- card 3 -->
-                  <div
+                  <a
+                    href="#"
                     class="swiper-slide !overflow-visible relative p-4 !h-[298px] !w-[371px] rounded-[20px]"
                   >
                     <div
@@ -202,10 +205,10 @@
                     >
                       2019 Honda Accord Sport/1.5t
                     </h3>
-                  </div>
+                  </a>
                 </div>
               </div>
-              <div class="flex flex-col gap-[33px]">
+              <div class="mt-[206px] flex flex-col gap-[33px]">
                 <button
                   id="btn-prev"
                   type="button"
@@ -241,11 +244,11 @@
             </div>
           </div>
           <form
-            class="z-50 mx-auto w-[1152px] flex flex-col rounded-[16px] overflow-clip"
+            class="z-50 mx-auto w-[1152px] flex flex-col rounded-[24px] overflow-clip"
           >
             <div class="w-full h-[94px] flex items-center gap-6 p-6 bg-white">
               <select
-                class="appearance-none w-[251px] p-6 flex items-center px-3 focus:outline-none text-[16px] leading-[22px] font-bold -tracking-[0.02em] text-accent"
+                class="appearance-none w-[251px] h-fit p-3 flex items-center focus:outline-none text-[16px] leading-[22px] font-bold -tracking-[0.02em] text-accent border-r border-[#EDEDED]"
               >
                 <option value="">Merek Mobil</option>
                 <option value="merek1">Toyota</option>
@@ -255,7 +258,7 @@
                 <option value="merek3">Hyundai</option>
               </select>
               <select
-                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+                class="w-[251px] h-fit p-3 flex items-center appearance-none focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent border-r border-[#EDEDED]"
               >
                 <option value="">Model Mobil</option>
                 <option value="model1">MPV</option>
@@ -265,7 +268,7 @@
                 <option value="model3">Crossover</option>
               </select>
               <select
-                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+                class="w-[251px] h-fit p-3 flex items-center appearance-none focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent border-r border-[#EDEDED]"
               >
                 <option value="">Lokasi Penjual</option>
                 <option value="lokasi1">Jakarta</option>
@@ -275,7 +278,7 @@
                 <option value="lokasi3">Jember</option>
               </select>
               <select
-                class="w-[251px] p-6 flex items-center appearance-none px-3 focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
+                class="w-[251px] h-fit p-3 flex items-center appearance-none focus:outline-none text-[16px] leading-[22px] font-bold tracking-[-0.02em] text-accent"
               >
                 <option value="">Range Harga</option>
                 <option value="model1">&leq; 25jt</option>
@@ -285,7 +288,7 @@
             </div>
             <button
               type="submit"
-              class="flex items-center justify-center bg-foreground px-4 py-6 cursor-pointer"
+              class="flex items-center justify-center bg-foreground px-4 py-[19px] cursor-pointer"
             >
               <span class="text-[20px] leading-[22px] font-bold text-white"
                 >Cari mobil</span
@@ -356,7 +359,7 @@
               />
             </a>
           </div>
-          <div class="mt-[60px] grid grid-cols-3 gap-[19.5px]">
+          <div class="mt-[60px] grid grid-cols-3 gap-x-[19.5px] gap-y-[36px]">
             <!-- card 1 -->
             <a
               href="#"
@@ -371,7 +374,7 @@
                   <img
                     src="./assets/images/thumbnails/card-1.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -387,7 +390,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2018 BMW M4 3.0 Coupe Yellow Edition
                     </h3>
                     <button
@@ -441,7 +446,7 @@
                   <img
                     src="./assets/images/thumbnails/card-2.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -457,7 +462,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2020 Mercedes-Benz A-Class - Limited Edition
                     </h3>
                     <button
@@ -511,7 +518,7 @@
                   <img
                     src="./assets/images/thumbnails/card-3.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -527,7 +534,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2017 Jeep Grand Cherokee 3.6 L Limited
                     </h3>
                     <button
@@ -581,7 +590,7 @@
                   <img
                     src="./assets/images/thumbnails/card-4.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -597,7 +606,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2019 Mercedes-Benz GLC-Class - SUV
                     </h3>
                     <button
@@ -651,7 +662,7 @@
                   <img
                     src="./assets/images/thumbnails/card-5.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -667,7 +678,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2018 Hyundai Tucson 2.0 XG CRDi - SUV - KM 20rb
                     </h3>
                     <button
@@ -721,7 +734,7 @@
                   <img
                     src="./assets/images/thumbnails/card-6.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -737,7 +750,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2024 BMW X6 3.0 xDrive40i M Sport SUV
                     </h3>
                     <button
@@ -791,7 +806,7 @@
                   <img
                     src="./assets/images/thumbnails/card-7.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -807,7 +822,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2019 Mercedes-Benz G Class-Class - SUV
                     </h3>
                     <button
@@ -861,7 +878,7 @@
                   <img
                     src="./assets/images/thumbnails/card-8.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -877,7 +894,9 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
                       2019 Honda Accord Sport/1.5t
                     </h3>
                     <button
@@ -931,7 +950,7 @@
                   <img
                     src="./assets/images/thumbnails/card-9.png"
                     alt="mobil"
-                    class="shrink-0 object-contain"
+                    class="shrink-0 h-auto w-full"
                   />
 
                   <div
@@ -947,8 +966,10 @@
                 </div>
                 <div class="flex flex-col gap-3">
                   <div class="w-full flex justify-between">
-                    <h3 class="w-[240px] text-lg leading-[31.2px] font-medium">
-                      2019 Honda Accord Sport/1.5t
+                    <h3
+                      class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
+                    >
+                      Honda Civic Type R Sedan - Red Edition
                     </h3>
                     <button
                       type="button"
@@ -1187,7 +1208,7 @@
               <h3
                 class="text-[20px] leading-[31.2px] text-center line-clamp-1 font-medium text-white"
               >
-                Hyundai Dealership
+                Ford Dealership
               </h3>
               <div class="flex gap-2 items-center shrink-0">
                 <img
@@ -1280,7 +1301,7 @@
                     <img
                       src="./assets/images/thumbnails/card-2.png"
                       alt="mobil"
-                      class="shrink-0 object-contain"
+                      class="shrink-0 h-auto w-full"
                     />
 
                     <div
@@ -1297,7 +1318,7 @@
                   <div class="flex flex-col gap-3">
                     <div class="w-full flex justify-between">
                       <h3
-                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                        class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
                       >
                         2020 Mercedes-Benz A-Class - Limited Edition
                       </h3>
@@ -1354,7 +1375,7 @@
                     <img
                       src="./assets/images/thumbnails/card-7.png"
                       alt="mobil"
-                      class="shrink-0 object-contain"
+                      class="shrink-0 h-auto w-full"
                     />
 
                     <div
@@ -1371,7 +1392,7 @@
                   <div class="flex flex-col gap-3">
                     <div class="w-full flex justify-between">
                       <h3
-                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                        class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
                       >
                         2019 Mercedes-Benz G Class-Class - SUV
                       </h3>
@@ -1428,7 +1449,7 @@
                     <img
                       src="./assets/images/thumbnails/card-6.png"
                       alt="mobil"
-                      class="shrink-0 object-contain"
+                      class="shrink-0 h-auto w-full"
                     />
 
                     <div
@@ -1445,7 +1466,7 @@
                   <div class="flex flex-col gap-3">
                     <div class="w-full flex justify-between">
                       <h3
-                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                        class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
                       >
                         2024 BMW X6 3.0 xDrive40i M Sport SUV
                       </h3>
@@ -1502,7 +1523,7 @@
                     <img
                       src="./assets/images/thumbnails/card-1.png"
                       alt="mobil"
-                      class="shrink-0 object-contain"
+                      class="shrink-0 h-auto w-full"
                     />
 
                     <div
@@ -1519,7 +1540,7 @@
                   <div class="flex flex-col gap-3">
                     <div class="w-full flex justify-between">
                       <h3
-                        class="w-[240px] text-lg leading-[31.2px] font-medium"
+                        class="w-[240px] h-[63px] line-clamp-2 text-lg leading-[31.2px] font-medium"
                       >
                         2018 BMW M4 3.0 Coupe Yellow Edition
                       </h3>
@@ -1567,7 +1588,7 @@
       </section>
 
       <!-- Footer -->
-      <footer class="flex justify-center">
+      <footer class="flex justify-center border-t border-[#F2F2F2]">
         <div class="w-[1280px] px-[62px] pt-[62px] pb-[81px]">
           <div class="flex">
             <div class="flex flex-col gap-6">
