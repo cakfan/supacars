@@ -622,6 +622,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-r {
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
@@ -641,6 +645,9 @@
   }
   .border-\[\#EDEDED\]\/\[0\.22\] {
     border-color: color-mix(in oklab, #EDEDED 22%, transparent);
+  }
+  .border-\[\#F2F2F2\] {
+    border-color: #F2F2F2;
   }
   .border-amber-400 {
     border-color: var(--color-amber-400);
