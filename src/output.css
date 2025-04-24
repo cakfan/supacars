@@ -347,6 +347,9 @@
   .h-\[52px\] {
     height: 52px;
   }
+  .h-\[63px\] {
+    height: 63px;
+  }
   .h-\[94px\] {
     height: 94px;
   }
@@ -388,6 +391,9 @@
   }
   .h-\[791px\] {
     height: 791px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-fit {
     height: fit-content;
@@ -559,6 +565,12 @@
   }
   .gap-\[163px\] {
     gap: 163px;
+  }
+  .gap-x-\[19\.5px\] {
+    column-gap: 19.5px;
+  }
+  .gap-y-\[36px\] {
+    row-gap: 36px;
   }
   .\!overflow-visible {
     overflow: visible !important;
